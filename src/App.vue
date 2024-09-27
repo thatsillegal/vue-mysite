@@ -1,47 +1,30 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <v-app>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+    <v-navigation-drawer expand-on-hover rail image="https://cdn.vuetifyjs.com/images/backgrounds/bg-2.jpg"
+      theme="dark">
+      <!-- When using the rail prop, the drawer will shrink (default 56px) 
+      and hide everything inside of v-list except the first element. -->
+      <v-list>
+        <v-list-item prepend-avatar="https://randomuser.me/api/portraits/women/85.jpg" subtitle="zixuan.peng@gmail.com"
+          title="Peng's"></v-list-item>
+      </v-list>
+      <v-divider></v-divider>
+      <v-list density="compact" nav>
+        <v-list-item prepend-icon="mdi-dots-grid" title="Works" value="myworks" to="/works"></v-list-item>
+        <v-list-item prepend-icon="mdi-camera" title="Photos" value="myphotos" to="/photos"></v-list-item>
+        <v-list-item prepend-icon="mdi-ideogram-cjk-variant" title="Essays" value="myessays" to="/essays"></v-list-item>
+      </v-list>
+    </v-navigation-drawer>
 
-  <main>
-    <TheWelcome />
-  </main>
+    <v-main>
+      <router-view />
+    </v-main>
+  </v-app>
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
