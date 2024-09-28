@@ -17,14 +17,18 @@ import TheWelcome from './components/TheWelcome.vue'
       </v-list>
       <v-divider></v-divider>
       <v-list density="compact" nav>
+        <v-list-item prepend-icon="mdi-home-circle-outline" title="Home" value="home" to="/"></v-list-item>
         <v-list-item prepend-icon="mdi-dots-grid" title="Works" value="myworks" to="/works"></v-list-item>
         <v-list-item prepend-icon="mdi-camera" title="Photos" value="myphotos" to="/photos"></v-list-item>
         <v-list-item prepend-icon="mdi-ideogram-cjk-variant" title="Essays" value="myessays" to="/essays"></v-list-item>
       </v-list>
     </v-navigation-drawer>
 
-    <v-main>
+    <v-main class="main-container">
       <router-view />
     </v-main>
   </v-app>
 </template>
+
+<style>
+</style>
