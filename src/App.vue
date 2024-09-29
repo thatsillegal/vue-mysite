@@ -23,31 +23,38 @@ import TheWelcome from './components/TheWelcome.vue'
       </v-list>
     </v-navigation-drawer>
 
-    <v-main class="main-container">
+    <v-main class="d-flex flex-column">
       <router-view />
     </v-main>
 
-    <v-footer height="10px">
-      <div>
+    <v-footer class="d-flex flex-column" app>
+      <div class="elevation-2 d-flex w-100 align-center px-4">
+        <div> Mariposa de sueño, te pareces a mi alma,
+          y te pareces a la palabra melancolía.</div>
+        <v-spacer></v-spacer>
         <v-btn
           icon="mdi-facebook"
+          size="small"
           class="mx-4"
-          variant="text"
+          variant="plain"
         ></v-btn>
         <v-btn
           icon="mdi-twitter"
           class="mx-4"
-          variant="text"
+          size="small"
+          variant="plain"
         ></v-btn>
         <v-btn
           icon="mdi-linkedin"
           class="mx-4"
-          variant="text"
+          size="small"
+          variant="plain"
         ></v-btn>
         <v-btn
           icon="mdi-instagram"
           class="mx-4"
-          variant="text"
+          size="small"
+          variant="plain"
         ></v-btn>
       </div>
     </v-footer>

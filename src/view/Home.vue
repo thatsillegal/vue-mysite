@@ -19,7 +19,14 @@ export default {
 
 <template>
 
-<HelloWorld></HelloWorld>
+<v-container class="fluid fill-height bg-grey-lighten-4">
+  <div position="relative" class="w-100">
+    <div positoin="absolute" class="h-100 w-100">
+      <v-img :src="imageSrc" cover height="100vh"></v-img>
+    </div>
+  </div>
+</v-container>
+
 
 </template>
 
