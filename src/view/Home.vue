@@ -18,13 +18,30 @@ export default {
 </script>
 
 <template>
+<!-- <div width="100vw">
+<v-sheet
+    class="d-flex align-start flex-column mb-6 bg-surface-variant"
+    height="200" width="100vw"
+  >
+    <v-sheet class="ma-2 pa-2 mb-auto">Flex item</v-sheet>
+    <v-sheet class="ma-2 pa-2">Flex item</v-sheet>
+    <v-sheet class="ma-2 pa-2">Flex item</v-sheet>
+</v-sheet>
+</div>
+<div class="w-100 bg-grey-lighten-4">nihao</div> -->
 
-<v-container class="fluid fill-height bg-grey-lighten-4">
-  <div position="relative" class="w-100">
-    <div positoin="absolute" class="h-100 w-100">
-      <v-img :src="imageSrc" cover height="100vh"></v-img>
-    </div>
-  </div>
+<v-container class="h-100 bg-grey-lighten-4" width="100vw">
+
+
+      <v-img
+        class="bg-white"
+        src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+        height="100%"
+        cover
+      ></v-img>
+
+
+  <!-- <v-img :src="imageSrc" cover class="h-100"></v-img> -->
 </v-container>
 
 
