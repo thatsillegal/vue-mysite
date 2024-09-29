@@ -7,8 +7,7 @@ import TheWelcome from './components/TheWelcome.vue'
 <template>
   <v-app>
 
-    <v-navigation-drawer expand-on-hover rail image="https://cdn.vuetifyjs.com/images/backgrounds/bg-2.jpg"
-      theme="dark">
+    <v-navigation-drawer expand-on-hover rail>
       <!-- When using the rail prop, the drawer will shrink (default 56px) 
       and hide everything inside of v-list except the first element. -->
       <v-list>
@@ -27,6 +26,32 @@ import TheWelcome from './components/TheWelcome.vue'
     <v-main class="main-container">
       <router-view />
     </v-main>
+
+    <v-footer height="10px">
+      <div>
+        <v-btn
+          icon="mdi-facebook"
+          class="mx-4"
+          variant="text"
+        ></v-btn>
+        <v-btn
+          icon="mdi-twitter"
+          class="mx-4"
+          variant="text"
+        ></v-btn>
+        <v-btn
+          icon="mdi-linkedin"
+          class="mx-4"
+          variant="text"
+        ></v-btn>
+        <v-btn
+          icon="mdi-instagram"
+          class="mx-4"
+          variant="text"
+        ></v-btn>
+      </div>
+    </v-footer>
+
   </v-app>
 </template>
 
